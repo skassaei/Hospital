@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{%block content%}
+
+<h3> this is display_all_patients.html</h3>
+    <h1>Patients</h1>
+  <ul>
+        {%for triage in patients_list%}
+        <li><a href="{% url 'show_triage' triage.id %}">{{triage.first_name}}</a></li>
+        {% endfor %}
+
+    </ul>
+
+
+{% endblock %}

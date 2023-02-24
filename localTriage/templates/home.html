@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h3> this is home.html</h3>
+<!--test perposes-->
+<ul>
+    <li><a href="add_triage"> ثبت فرم جدید </a> </li>
+    <li><a href="patients_list"> مشاهده فرم ها </a></li>
+    </ul>
+<!--the above should be removed
+    {% if user.groups.all.0.name == "stations" %}
+    این چیزیست که station1 میبیند
+    <ul>
+    <li><a href="add_triage"> ثبت فرم جدید </a> </li>
+    <li><a href="patients_list"> مشاهده فرم ها </a></li>
+    </ul>
+{% else %}
+    این چیزیست که افراد غیر station :میبینند
+    <ul>
+    <li><a href="patients_list">مشاهده فرم ها</a></li>
+    </ul>
+{% endif %}
+    </div>-->
+<div>
+
+</div>
+{% endblock %}
